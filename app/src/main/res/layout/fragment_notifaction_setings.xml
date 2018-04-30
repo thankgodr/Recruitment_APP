@@ -1,0 +1,149 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhicstech.crutra.crutra.Profile.SettingsUi.NotifactionSetingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:id="@+id/applicationNotification"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDefault"
+                    android:layout_centerVertical="true"
+                    android:text="@string/applicationNotificatio"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/applationSwitch"
+                    android:theme="@style/SCBSwitch"
+                    android:textOff="@string/textOff"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:id="@+id/message"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDefault"
+                    android:layout_centerVertical="true"
+                    android:text="@string/messageNotification"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/messageSwitch"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:id="@+id/sound"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDefault"
+                    android:layout_centerVertical="true"
+                    android:text="@string/soundNotification"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/soundSwitch"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:id="@+id/vibrate"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDefault"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ivibrateNotification"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textOn="@string/textOn"
+                    android:id="@+id/vibrateSwitch"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:id="@+id/interview"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDefault"
+                    android:layout_centerVertical="true"
+                    android:text="@string/interviewNotification"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/interviewSwitch"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</FrameLayout>

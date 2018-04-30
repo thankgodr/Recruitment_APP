@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/packages"
+                    android:textStyle="bold"
+                    android:id="@+id/top"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/top"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectPackages"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/packages"
+                        android:layout_height="wrap_content">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/prtxt"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="£500"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/prtxt"
+                    android:id="@+id/price"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/voltxt"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/price"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jobVol"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="£500"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/voltxt"
+                    android:id="@+id/jobVol"/>
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="@string/paynow"
+                android:id="@+id/paynow"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

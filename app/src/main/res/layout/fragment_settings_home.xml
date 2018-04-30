@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhicstech.crutra.crutra.Profile.SettingsHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#a3c6c9"
+            android:id="@+id/imageHolder"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:src="@drawable/ic_user"
+                android:layout_centerInParent="true"
+                android:id="@+id/profile_image"
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_height="100dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imageHolder"
+            android:background="#f1f9ff"
+            android:id="@+id/nameHolder"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textSize="20sp"
+                    android:id="@+id/name"
+                    android:textStyle="bold"
+                    android:textColor="@color/textDefault"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="San Fracisco, CO"
+                    android:id="@+id/location"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/edit"
+                android:id="@+id/edit"
+                android:textColor="@android:color/white"
+                android:background="@color/textDefault"
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_below="@+id/nameHolder"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/in_notification"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:id="@+id/notification"
+                android:textColor="@color/textDefault"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:text="@string/notifications"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_seetings_round"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:id="@+id/general"
+                android:textColor="@color/textDefault"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:text="@string/genral"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawableTint="@color/textDefault"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:id="@+id/account"
+                android:textColor="@color/textDefault"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:text="@string/accounts"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_key"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:id="@+id/privacy"
+                android:textColor="@color/textDefault"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:text="@string/privacy"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_block"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:id="@+id/block"
+                android:textColor="@color/textDefault"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:text="@string/block"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_info"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="18sp"
+                android:id="@+id/help"
+                android:clickable="true"
+                android:textColor="@color/textDefault"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:text="@string/help"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

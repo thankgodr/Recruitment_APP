@@ -1,0 +1,257 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rhicstech.crutra.crutra.CompanyUi.PostJobs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/title"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/jobTitle"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:background="@drawable/black_botton_one"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.jota.autocompletelocation.AutoCompleteLocation
+                    android:layout_width="match_parent"
+                    android:id="@+id/city"
+                    app:hint_text="@string/address"
+                    android:inputType="text"
+                    app:background_layout="@drawable/black_botton_one"
+                    android:layout_marginTop="3dp"
+                    app:hint_text_color="@android:color/black"
+                    app:text_color="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_height="wrap_content"
+
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/state"
+                    android:hint="@string/state"
+                    android:inputType="text"
+                    android:background="@drawable/black_botton_one"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/country"
+                    android:background="@drawable/black_botton_one"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_height="wrap_content"></Spinner>
+                />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/summary"
+                    android:background="@drawable/black_botton_one"
+                    android:hint="@string/jobDesc"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"
+                    android:layout_height="100dp"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="8dp"
+                    android:gravity="top"
+                    />
+
+                <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/deadLine"
+                    android:inputType="datetime"
+                    android:hint="@string/deadline"
+                    android:background="@drawable/black_botton_one"
+                    android:layout_marginTop="3dp"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/industry"
+                    android:background="@drawable/black_botton_one"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/categoryHolder"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="@dimen/activity_vertical_margin"
+                    android:id="@+id/rangeTitle"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="@string/salaryRange"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content"
+                        android:text="@string/permonth"/>
+
+                </RelativeLayout>
+
+                <com.appyvet.materialrangebar.RangeBar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/range"
+                    app:mrb_pinMaxFont="10sp"
+                    app:mrb_rangeBarColor="@color/textDefault"
+                    app:mrb_selectorColor="@color/textDefault"
+                    app:mrb_tickColor="@color/textDefault"
+                    app:mrb_rangeBarPaddingBottom="12dp"
+                    app:mrb_connectingLineColor="@color/textDefault"
+                    app:mrb_selectorBoundaryColor="@color/textDefault"
+                    app:mrb_selectorBoundarySize="2dp"
+                    app:mrb_pinColor="@color/textDefault"
+                    app:mrb_pinTextColor="@android:color/white"
+                    app:mrb_selectorSize="10dp"
+                    app:mrb_tickEnd="5000"
+                    android:layout_below="@+id/rangeTitle"
+                    app:mrb_tickInterval="100"
+                    app:mrb_tickStart="100"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/range"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/amount"
+                    android:paddingHorizontal="@dimen/activity_vertical_margin"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/firstHundred"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/hudreddollars"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/lastHundread"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/lastThouand"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:background="@drawable/black_botton_one"
+                        android:lines="4"
+                        android:gravity="start"
+                        android:paddingHorizontal="@dimen/activity_vertical_margin"
+                        android:textColorHint="@android:color/black"
+                        android:hint="@string/requirements"
+                        android:textColor="@color/textDefault"
+                        android:id="@+id/requirements"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:text="@string/uploadBackgroundImage"/>
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/dash_border"
+                    android:src="@drawable/ic_upload"
+                    android:id="@+id/upload"
+                    android:scaleType="fitCenter"
+                    android:layout_height="50dp" />
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="@string/submit"
+                    android:background="@color/textDefault"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/submit"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

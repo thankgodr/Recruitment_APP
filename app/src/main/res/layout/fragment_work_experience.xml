@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhicstech.crutra.crutra.Profile.WorkExperienceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:textColor="@color/textDefault"
+                android:text="@string/workexperience"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/workTitle"
+                        android:textSize="10sp"
+                        android:textColor="@color/textDefault"
+                        android:textStyle="bold"
+                        android:text="Marketing &amp; Sales Manager"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/workdates"
+                        android:textSize="10sp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/textDefault"
+                        android:text="May 2017 - April 2018"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rhics Technology UK"
+                    android:textSize="9sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/lorem"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+                android:background="@color/textDefault"
+                android:text="@string/addExperience"
+                android:textColor="@color/white"
+                android:id="@+id/add"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

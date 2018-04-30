@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#07656B</color>
+    <color name="textDefault">#07656B</color>
+    <color name="copyRight">#2E2E2E</color>
+    <color name="grey">#b5b5b5</color>
+    <color name="grey_light">#e7e7e7</color>
+    <color name="textGrey">#969696</color>
+    <color name="SidebarText">#3a8286</color>
+    <color name="grey2">#777777</color>
+    <color name="white">#ffffff</color>
+</resources>

@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhicstech.crutra.crutra.videoui.VideoPlayer">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <hb.xvideoplayer.MxVideoPlayerWidget
+                    android:id="@+id/mpw_video_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/fourconner"
+                android:src="@drawable/ic_user"
+                android:tint="@color/textDefault" />
+        </FrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/fullname"
+                    android:textSize="18sp"
+                    android:text="Full Name"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/headline"
+                    android:text="headLine"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:text="location"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:id="@+id/summary"
+                    android:layout_marginTop="20dp"/>
+
+                <com.cunoraz.tagview.TagView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/skills"
+                    android:layout_height="wrap_content">
+
+                </com.cunoraz.tagview.TagView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shorlist"
+                        android:textColor="@android:color/white"
+                        android:background="@android:color/holo_orange_dark"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/shotlist"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/message"
+                        android:background="@android:color/holo_green_dark"
+                        android:textColor="@android:color/white"
+                        android:text="@string/message"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/decline"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="@string/decline"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/interview"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="@string/scheduleinterview"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

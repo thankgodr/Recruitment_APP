@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:hint="@string/companyName"
+        android:id="@+id/companyName"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:background="@drawable/bottom_one"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:hint="@string/startDate"
+        android:id="@+id/startDate"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:background="@drawable/bottom_one"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:hint="@string/endDate"
+        android:id="@+id/endDate"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:background="@drawable/bottom_one"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="@string/desc"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/desc"
+        android:gravity="start"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:background="@drawable/bottom_one"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textDefault"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/submit"/>
+
+
+
+
+</LinearLayout>

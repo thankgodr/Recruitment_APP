@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/onemenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@android:color/white"
+            android:title="Post JoB" />
+    </group>
+    <group
+        android:id="@+id/twomenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:iconTint="@android:color/white"
+            android:title="Applications" />
+    </group>
+    <group
+        android:id="@+id/threemenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:iconTint="@android:color/white"
+            android:title="Slideshow" />
+    </group>
+    <group
+        android:id="@+id/fourmenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Update Profile" />
+    </group>
+
+    <group
+        android:id="@+id/fourmenu2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/card_color_round_rect_blue"
+            android:title="Make Payment" />
+    </group>
+
+    <group
+        android:id="@+id/fivemenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:iconTint="@android:color/white"
+            android:title="Share" />
+
+    </group>
+
+    <group
+        android:id="@+id/sixmenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:iconTint="@android:color/white"
+            android:title="Logout" />
+    </group>
+
+</menu>

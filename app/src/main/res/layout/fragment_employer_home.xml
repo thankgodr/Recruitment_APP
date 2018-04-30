@@ -1,0 +1,409 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhicstech.crutra.crutra.CompanyUi.EmployerHomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splash_bg"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/front"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:background="@drawable/graybgnoline"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/logo"
+                        android:id="@+id/slogan"
+                        android:textStyle="bold"
+                        android:textColor="@color/textDefault"
+                        android:text="@string/empdashboard"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:id="@+id/postjob"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_edit"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text= "@string/postjob1"
+                             android:layout_gravity="center_horizontal"
+                             android:textStyle="bold"
+                             android:textSize="12sp"
+                             android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:id="@+id/candidates"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_user"
+                            android:scaleType="fitCenter"
+                            android:tint="@color/textDefault"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/candidates"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:maxLines="1"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:id="@+id/jobs"
+                        android:clickable="true"
+                        android:layout_margin="5dp"
+
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_folder"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/myjobs"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:id="@+id/favourites"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_love"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/favorites"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:id="@+id/messages"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_messages"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/messages"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/search"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@mipmap/search"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/search"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:id="@+id/interview"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_callenda"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/interview"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:id="@+id/shortlist"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_shotlist"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/shotlistS"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:id="@+id/training"
+                        android:clickable="true"
+
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_training"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/training"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:id="@+id/report"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_reports"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/reports"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:id="@+id/notifications"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_money"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/buycredit"
+                            android:textSize="10sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/settings"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:src="@drawable/ic_settings"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "@string/settings"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/textDefault"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:text="@string/copyright"
+                    android:textColor="@color/copyRight" />
+                
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/shotlist"
+        android:title="@string/shotlist" />
+    <item android:id="@+id/message"
+        android:title="@string/message" />
+    <item android:id="@+id/decline"
+        android:title="@string/decline" />
+    <item android:id="@+id/schedule"
+        android:title="@string/scheduleinterview" />
+</menu>

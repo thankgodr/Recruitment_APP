@@ -1,0 +1,384 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tagview="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rhicstech.crutra.crutra.searchUi.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:id="@+id/top"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:drawableLeft="@mipmap/search"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/search"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/searchApp"
+                        android:textColorHint="@color/textDefault"
+                        android:background="@android:color/transparent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:background="@android:color/white"
+                        android:layout_below="@+id/search"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:background="@color/textDefault"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:layout_marginRight="3dp"
+                            android:text="@string/jobs"/>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/fourwithcolor"
+                            android:layout_marginRight="@dimen/activity_vertical_margin"
+                            android:layout_marginLeft="3dp"
+                            android:padding="15dp"
+                            android:text="@string/training"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/top"
+                    android:id="@+id/categoryHolder"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+                            android:textColor="@color/textDefault"
+                            android:text="@string/jobCategories"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/tapcategories"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <AutoCompleteTextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/fourconner"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:id="@+id/autocom"/>
+
+                    <com.cunoraz.tagview.TagView
+                        android:id="@+id/tag_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        tagview:lineMargin="5dp"
+                        tagview:tagMargin="5dp"
+                        tagview:textPaddingLeft="8dp"
+                        tagview:textPaddingTop="5dp"
+                        tagview:textPaddingRight="8dp"
+                        tagview:textPaddingBottom="5dp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/categoryHolder"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rangeTitle"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/textDefault"
+                        android:text="@string/salaryRange"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/textDefault"
+                        android:layout_height="wrap_content"
+                        android:text="@string/permonth"/>
+
+                </RelativeLayout>
+
+                <com.appyvet.materialrangebar.RangeBar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/range"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    app:mrb_pinMaxFont="10sp"
+                    app:mrb_rangeBarColor="@color/textDefault"
+                    app:mrb_selectorColor="@color/textDefault"
+                    app:mrb_tickColor="@color/textDefault"
+                    app:mrb_rangeBarPaddingBottom="12dp"
+                    app:mrb_connectingLineColor="@color/textDefault"
+                    app:mrb_selectorBoundaryColor="@color/textDefault"
+                    app:mrb_selectorBoundarySize="2dp"
+                    app:mrb_pinColor="@color/textDefault"
+                    app:mrb_pinTextColor="@android:color/white"
+                    app:mrb_selectorSize="10dp"
+                    app:mrb_tickEnd="5000"
+                    android:layout_below="@+id/rangeTitle"
+                    app:mrb_tickInterval="100"
+                    app:mrb_tickStart="100"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/range"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/amount"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDefault"
+                        android:id="@+id/firstHundred"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/hudreddollars"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDefault"
+                        android:id="@+id/lastHundread"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/lastThouand"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/amount"
+                    android:id="@+id/switches"
+                    android:weightSum="4"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textDefault"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:text="@string/parmanent"/>
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:id="@+id/permanet"
+                            android:theme="@style/SCBSwitch"
+                            android:padding="10dp"
+                            tools:checked="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textDefault"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:text="@string/contract"/>
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:padding="10dp"
+                            android:id="@+id/contract"
+                            android:theme="@style/SCBSwitch"
+                            tools:checked="false" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textDefault"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:text="@string/fulltime"/>
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:id="@+id/fulltime"
+                            android:padding="10dp"
+                            android:theme="@style/SCBSwitch"
+                            tools:checked="false" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textDefault"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:text="@string/parttime"/>
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:theme="@style/SCBSwitch"
+                            android:padding="10dp"
+                            android:id="@+id/parttime"
+                            tools:checked="false" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switches"
+                    android:background="@drawable/bottom_one"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/location"
+                    android:padding="10dp"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:drawableLeft="@drawable/ic_action_name" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:id="@+id/searchBtn"
+            android:layout_alignParentBottom="true"
+            android:background="@color/textDefault"
+            android:textColor="@android:color/white"
+            android:text="@string/search"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="8dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:visibility="gone"
+            android:id="@+id/start"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:text="@string/skip"
+                android:id="@+id/skip"
+                android:textColor="@color/textDefault"
+                android:background="@drawable/fourwithcolor"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/next"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:background="@color/textDefault"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

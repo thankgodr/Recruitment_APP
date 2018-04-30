@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="250dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginRight="32dp"
+    android:layout_marginLeft="32dp"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/record"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_video"
+        android:drawableTint="@android:color/black"
+        android:gravity="center"
+        android:padding="@dimen/twenty"
+        android:background="@color/textDefault"
+        android:text="@string/upload"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_upload"
+        android:drawableTint="@android:color/darker_gray"
+        android:padding="@dimen/twenty"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/grey2"
+        android:background="@android:color/transparent"
+        android:id="@+id/upload"
+        android:text="@string/uploadFromSys"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_groups"
+        android:padding="@dimen/twenty"
+        android:id="@+id/select"
+        android:gravity="center"
+        android:textColor="@color/grey2"
+        android:background="@android:color/transparent"
+        android:text="@string/selectFromAcc"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_groups"
+        android:padding="@dimen/twenty"
+        android:id="@+id/youtube"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/grey2"
+        android:background="@android:color/transparent"
+        android:text="@string/uploadYoutube"/>
+
+</LinearLayout>

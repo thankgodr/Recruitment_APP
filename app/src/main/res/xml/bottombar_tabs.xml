@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/jobs"
+        icon="@drawable/ic_key"
+        title="Jobs" />
+    <tab
+        id="@+id/interviews"
+        icon="@drawable/ic_callenda"
+        title="Interviews" />
+    <tab
+        id="@+id/inbox"
+        icon="@drawable/ic_messages"
+        title="Inbox" />
+    <tab
+        id="@+id/training"
+        icon="@drawable/ic_folder"
+        title="Training" />
+
+</tabs>

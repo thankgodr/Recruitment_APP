@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhicstech.crutra.crutra.auth.intro.FifthFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="100dp"
+            android:id="@+id/scroll"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:id="@+id/top"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:drawableLeft="@mipmap/search"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/search"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/Marketing"
+                    android:textColorHint="@color/textDefault"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_below="@+id/top"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/textDefault"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="@string/trainingCategories"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adobe XD"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textDefault"
+                        android:shadowColor="@color/textDefault"
+                        android:buttonTint="@color/grey"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adobe Photoshop"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/textDefault"
+                        android:shadowColor="@color/textDefault"
+                        android:buttonTint="@color/grey"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adobe Illustrator"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/textDefault"
+                        android:shadowColor="@color/textDefault"
+                        android:buttonTint="@color/grey"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adobe XD"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/textDefault"
+                        android:shadowColor="@color/textDefault"
+                        android:buttonTint="@color/grey"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adobe Photoshop"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/textDefault"
+                        android:shadowColor="@color/textDefault"
+                        android:buttonTint="@color/grey"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adobe Illustrator"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/textDefault"
+                        android:shadowColor="@color/textDefault"
+                        android:buttonTint="@color/grey"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/scroll"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@color/textDefault"
+                android:id="@+id/start"
+                android:textColor="@android:color/white"
+                android:text="@string/letStart"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

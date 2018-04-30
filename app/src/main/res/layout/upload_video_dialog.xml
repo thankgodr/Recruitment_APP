@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="@string/editVids"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_one"
+        android:padding="10dp"
+        android:textColorHint="@color/textDefault"
+        android:textColor="@color/textDefault"
+        android:id="@+id/vidtitle"
+        android:layout_marginTop="20dp"
+        android:hint="@string/vidtitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textDefault"
+        android:text="@string/videoStatus"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:paddingHorizontal="@dimen/activity_vertical_margin"
+        android:id="@+id/statusGroup"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/textDefault"
+            android:checked="true"
+            android:id="@+id/privatedtatus"
+            android:text="@string/vidprivate"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/textDefault"
+            android:id="@+id/publicstatus"
+            android:text="@string/vidpublic"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/uploadbtn"
+        android:backgroundTint="@color/textDefault"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/uplonBtn"/>
+
+
+</LinearLayout>

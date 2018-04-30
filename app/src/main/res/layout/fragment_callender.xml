@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhicstech.crutra.crutra.Profile.CallenderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/textDefault"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                android:text="Interview"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="Thurs, 23rd  April 2017"/>
+
+        </RelativeLayout>
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:id="@+id/calender"
+            android:layout_height="wrap_content"></CalendarView>
+    </LinearLayout>
+
+</FrameLayout>

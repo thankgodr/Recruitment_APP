@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rhicstech.crutra.crutra.UserUi.ListJobs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/grey_light"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:weightSum="6"
+            android:visibility="gone"
+            android:id="@+id/searchHoler"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:id="@+id/search"
+                android:editable="false"
+                android:background="@drawable/fourconner"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="5"
+                android:layout_toRightOf="@+id/search"
+                android:src="@drawable/ic_search_black_24dp"
+                app:civ_border_width="0dp"
+                android:background="@drawable/clip"
+                android:backgroundTint="@color/textDefault"
+                android:layout_marginRight="8dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NoJobsAvailable"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_below="@+id/searchHoler"
+            android:id="@+id/error"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_below="@+id/searchHoler"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

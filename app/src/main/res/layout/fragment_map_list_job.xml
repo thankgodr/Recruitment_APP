@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rhicstech.crutra.crutra.UserUi.MapListJobFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map"
+                android:layout_weight="100"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:weightSum="6"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:id="@+id/search"
+                android:background="@drawable/fourconner"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:layout_toRightOf="@+id/search"
+                android:src="@drawable/ic_search_black_24dp"
+                app:civ_border_width="0dp"
+                android:background="@drawable/clip"
+                android:backgroundTint="@color/textDefault"
+                android:layout_marginRight="8dp"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
